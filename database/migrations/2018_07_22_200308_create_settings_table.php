@@ -19,6 +19,7 @@ class CreateSettingsTable extends Migration
             $table->string('email');
             $table->string('no_telpon');
             $table->string('fax');
+            $table->string('web');
             $table->string('alamat');
             $table->timestamps();
         });
