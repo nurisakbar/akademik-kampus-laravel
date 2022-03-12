@@ -14,9 +14,9 @@ class AddWaApiKeyAndZenzivaToSetting extends Migration
     public function up()
     {
         Schema::table('setting', function (Blueprint $table) {
-            $table->string('apiwha_apikey')->nullAble();
-            $table->string('zenziva_userkey')->nullAble();
-            $table->string('zenziva_passkey')->nullAble();
+            $table->string('apiwha_apikey')->nullable();
+            $table->string('zenziva_userkey')->nullable();
+            $table->string('zenziva_passkey')->nullable();
         });
     }
 
