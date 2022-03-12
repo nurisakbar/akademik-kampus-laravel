@@ -16,7 +16,7 @@ class CreateTahunAkademiksTable extends Migration
         Schema::create('tahun_akademik', function (Blueprint $table) {
             $table->string('kode_tahun_akademik')->primary();
             $table->string('tahun_akademik');
-            $table->string('status');
+            $table->string('status',1)->default('n');
             $table->timestamps();
         });
     }

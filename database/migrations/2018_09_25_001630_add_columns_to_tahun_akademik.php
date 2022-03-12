@@ -14,12 +14,12 @@ class AddColumnsToTahunAkademik extends Migration
     public function up()
     {
         Schema::table('tahun_akademik', function (Blueprint $table) {
-            $table->date('tanggal_awal_kuliah');
-            $table->date('tanggal_akhir_kuliah');
-            $table->date('tanggal_awal_uts');
-            $table->date('tanggal_akhir_uts');
-            $table->date('tanggal_awal_uas');
-            $table->date('tanggal_akhir_uas');
+            $table->date('tanggal_awal_kuliah')->nullable();
+            $table->date('tanggal_akhir_kuliah')->nullable();
+            $table->date('tanggal_awal_uts')->nullable();
+            $table->date('tanggal_akhir_uts')->nullable();
+            $table->date('tanggal_awal_uas')->nullable();
+            $table->date('tanggal_akhir_uas')->nullable();
         });
     }
 
