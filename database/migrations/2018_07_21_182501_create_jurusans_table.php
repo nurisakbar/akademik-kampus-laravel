@@ -16,7 +16,7 @@ class CreateJurusansTable extends Migration
         Schema::create('jurusan', function (Blueprint $table) {
             $table->string('kode_jurusan')->primary();
             $table->string('nama_jurusan');
-            $table->string('kode_fakutas');
+            $table->string('kode_fakultas');
             $table->string('jenjang');
             $table->timestamps();
         });
